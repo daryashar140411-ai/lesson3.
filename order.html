@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Оформление доставки — Dostaffkin</title>
+<link rel="stylesheet" href="styles/base.css"><link rel="stylesheet" href="styles/base_adaptive.css">
+<link rel="stylesheet" href="styles/order.css"><link rel="stylesheet" href="styles/order_adaptive.css">
+</head>
+<body class="order-page">
+<div class="map-background" aria-hidden="true"></div>
+<header class="header">
+<a class="header-brand" href="index.html"><span class="header-logo">D</span><span class="header-title">Dostaffkin</span></a>
+<nav class="header-menu"><a class="header-link" href="order.html">Оформить доставку</a><a class="header-link" href="track.html">Отследить посылку</a></nav>
+</header>
+<aside class="order-panel">
+<div class="panel-heading"><h1>Оформление доставки</h1><p>Выберите параметры для расчета отправления</p></div>
+<div class="panel-body">
+<section><div class="section-label">Маршрут</div>
+<label class="route-field"><i class="pin from"></i><input placeholder="Откуда: начните вводить адрес"></label>
+<label class="route-field"><i class="pin to"></i><input placeholder="Куда: начните вводить адрес"></label></section>
+<section><div class="section-label">Размер посылки</div>
+<div class="sizes-grid">
+<button class="size-card active" type="button"><b>XS</b><span>9 ₽/км</span><img src="images/sizes/xs.svg"><small>17×12×9 см,<br>до 0.5 кг</small></button>
+<button class="size-card" type="button"><b>S</b><span>13 ₽/км</span><img src="images/sizes/s.svg"><small>23×19×10 см,<br>до 2 кг</small></button>
+<button class="size-card" type="button"><b>M</b><span>20 ₽/км</span><img src="images/sizes/m.svg"><small>33×25×15 см,<br>до 5 кг</small></button>
+<button class="size-card" type="button"><b>L</b><span>27 ₽/км</span><img src="images/sizes/l.svg"><small>31×25×38 см,<br>до 12 кг</small></button>
+<button class="size-card" type="button"><b>XL</b><span>35 ₽/км</span><img src="images/sizes/xl.svg"><small>60×35×30 см,<br>до 18 кг</small></button>
+<button class="size-card" type="button"><b>MAX</b><span>70 ₽/км</span><img src="images/sizes/max.svg"><small>120×120×80 см,<br>до 200 кг</small></button>
+</div></section>
+<button class="calculate" type="button">Рассчитать</button>
+<section class="calculation"><b>Расчеты вашего заказа</b>
+<div><span>Расстояние</span><span>730.2 км</span></div>
+<div><span>Доставим через</span><span>11 дней</span></div>
+<div><span>Тариф</span><span>13 ₽/км</span></div>
+<div class="total"><span>Итого</span><strong>6 572 ₽</strong></div>
+</section>
+<section class="contact-form"><b>Оформление доставки</b><div class="section-label">Контакты</div>
+<div class="contact-row"><input placeholder="Ваше имя"><input placeholder="Ваш телефон"></div>
+<div class="section-label extra-label">Дополнительная информация</div>
+<textarea placeholder="Детали доставки и комментарий"></textarea>
+<button class="calculate" type="button">Отправить заявку</button>
+</section>
+</div></aside>
+</body></html>

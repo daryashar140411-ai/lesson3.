@@ -1,0 +1,40 @@
+body.order-page{margin:0;min-height:100vh;overflow:hidden;background:#e9efdf;font-family:Roboto,Arial,sans-serif}
+.map-background{position:fixed;inset:0;background:url("../images/map-background.jpg") center center/cover no-repeat}
+.order-page .header{position:fixed;z-index:5;left:20px;right:20px;top:16px;height:54px;border-radius:15px;background:#ffffffed;box-shadow:0 5px 18px #0002;padding:7px 14px;display:flex;align-items:center}
+.order-page .header-brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:#111}
+.order-page .header-logo{width:34px;height:34px;border-radius:9px;background:#ffcc00;color:#111;display:grid;place-items:center;font-weight:bold}
+.order-page .header-title{font-size:16px;font-weight:bold}
+.order-page .header-menu{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:48px}
+.order-page .header-link{font-size:12px;text-decoration:none;color:#111;white-space:nowrap}
+.order-panel{position:fixed;z-index:4;left:20px;top:86px;bottom:20px;width:310px;background:#ffffffed;border-radius:13px;box-shadow:0 5px 18px #0002;overflow:hidden;display:flex;flex-direction:column}
+.panel-heading{padding:15px 15px 10px;border-bottom:1px solid #0000000e}
+.panel-heading h1{font-size:16px;margin:0 0 4px;font-weight:700}
+.panel-heading p{font-size:10px;color:#888;margin:0}
+.panel-body{overflow:auto;padding:12px 14px 16px;display:flex;flex-direction:column;gap:13px}
+.section-label{font-size:10px;color:#858585;margin-bottom:6px}
+.route-field{height:39px;border:1px solid #e5e5e5;border-radius:9px;background:#fafafa;display:flex;align-items:center;padding:0 9px;gap:9px;margin-bottom:5px}
+.route-field input,.contact-row input{border:0;outline:0;background:transparent;width:100%;font:10px Roboto,Arial;color:#222}
+.route-field input::placeholder,.contact-row input::placeholder,textarea::placeholder{color:#999}
+.pin{width:20px;height:20px;border-radius:6px;background:#eee;display:grid;place-items:center;flex:none}
+.pin:after{content:"";width:6px;height:6px;border-radius:50%;background:#f5b900}
+.pin.to:after{background:#259d40}
+.sizes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.size-card{min-width:0;height:105px;background:#fff;border:1px solid #e5e5e5;border-radius:9px;padding:8px;display:grid;grid-template-columns:1fr auto;grid-template-rows:14px 42px 1fr;text-align:left;cursor:pointer;color:#111;font-family:inherit}
+.size-card.active{background:#faf4dd;border-color:#cfc5a0}
+.size-card b{font-size:11px}
+.size-card span{font-size:9px;color:#777}
+.size-card img{grid-column:1/3;width:100%;height:42px;object-fit:contain}
+.size-card small{grid-column:1/3;font-size:9px;line-height:1.2;color:#888}
+.calculate{width:100%;height:34px;border:0;border-radius:8px;background:#ffca00;font-weight:bold;font-size:10px;cursor:pointer}
+.calculation{border:1px solid #e5e5e5;border-radius:9px;background:#fff;padding:10px;font-size:10px}
+.calculation>b{display:block;font-size:11px;margin-bottom:10px}
+.calculation>div{display:flex;justify-content:space-between;margin:7px 0}
+.calculation .total{border-top:1px dashed #ddd;padding-top:8px;margin-top:12px;color:#888}
+.calculation .total strong{font-size:16px;color:#111}
+.contact-form{border:1px solid #e5e5e5;border-radius:9px;background:#fff;padding:10px}
+.contact-form>b{font-size:11px;display:block;margin-bottom:9px}
+.contact-row{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.contact-row input{height:34px;border:1px solid #e5e5e5;border-radius:8px;padding:0 8px;min-width:0}
+.extra-label{margin-top:10px}
+.contact-form textarea{width:100%;height:62px;resize:none;border:1px solid #e5e5e5;border-radius:8px;padding:9px;box-sizing:border-box;font:10px Roboto,Arial;outline:0}
+.contact-form .calculate{margin-top:7px}
